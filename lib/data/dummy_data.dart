@@ -62,15 +62,19 @@ const availableCategories = [
   ),
 ];
 
-const dummyMeals = [
+final dummyMeals = [
   Meal(
     id: 'm1',
     categories: ['c1', 'c2'],
     title: 'Spaghetti with Tomato Sauce',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+    imageUrl: Image.asset(
+      'assets/spaghetti.jpeg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -109,8 +113,12 @@ const dummyMeals = [
     title: 'Toast Hawaii',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/toast.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 10,
     ingredients: [
       '1 Slice White Bread',
@@ -138,8 +146,12 @@ const dummyMeals = [
     title: 'Classic Hamburger',
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/burger.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -169,8 +181,12 @@ const dummyMeals = [
     title: 'Wiener Schnitzel',
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/schnitzel.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -206,8 +222,12 @@ const dummyMeals = [
     title: 'Salad with Smoked Salmon',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/smoked-salmon.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 15,
     ingredients: [
       'Arugula',
@@ -241,8 +261,12 @@ const dummyMeals = [
     title: 'Delicious Orange Mousse',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/pastry.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -276,8 +300,12 @@ const dummyMeals = [
     title: 'Pancakes',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/pancake.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -307,8 +335,12 @@ const dummyMeals = [
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/indian-food.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -340,8 +372,12 @@ const dummyMeals = [
     title: 'Chocolate Souffle',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/souffle.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -391,8 +427,12 @@ const dummyMeals = [
     title: 'Asparagus Salad with Cherry Tomatoes',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    imageUrl: Image.asset(
+      'assets/asparagus.jpg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 30,
     ingredients: [
       'White and Green Asparagus',
@@ -421,8 +461,12 @@ const dummyMeals = [
     title: 'Yam & Egg Sauce',
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
-    imageUrl:
-        'https://img-global.cpcdn.com/recipes/3ec8dee95f7bd8ac/1200x630cq70/photo.jpg',
+    imageUrl: Image.asset(
+      'assets/yam.jpeg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -432,6 +476,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -452,8 +497,12 @@ const dummyMeals = [
     title: 'Party Jollof Rice',
     affordability: Affordability.pricey,
     complexity: Complexity.hard,
-    imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/1200px-Jollof_Rice_with_Stew.jpg',
+    imageUrl: Image.asset(
+      'assets/jollof.jpeg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -463,6 +512,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -483,8 +533,12 @@ const dummyMeals = [
     title: 'Fried Rice',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://allnigerianfoods.com/wp-content/uploads/fried_rice_recipe.jpg',
+    imageUrl: Image.asset(
+      'assets/fried_rice.webp',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 40,
     ingredients: [
       '4 Tomatoes',
@@ -494,6 +548,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -514,8 +569,12 @@ const dummyMeals = [
     title: 'Pounded yam & Efo Riro',
     affordability: Affordability.affordable,
     complexity: Complexity.challenging,
-    imageUrl:
-        'https://allnigerianfoods.com/wp-content/uploads/Efo-riro-recipe.jpg',
+    imageUrl: Image.asset(
+      'assets/Efo-riro.webp',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 40,
     ingredients: [
       '4 Tomatoes',
@@ -525,6 +584,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -545,7 +605,12 @@ const dummyMeals = [
     title: 'Indomie & Egg',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl: 'https://i.ytimg.com/vi/-zEiKW3Gx0k/maxresdefault.jpg',
+    imageUrl: Image.asset(
+      'assets/indomie.jpeg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -555,6 +620,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -575,7 +641,12 @@ const dummyMeals = [
     title: 'Egusi Soup',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl: 'https://i.ytimg.com/vi/SLxSksjC_0g/maxresdefault.jpg',
+    imageUrl: Image.asset(
+      'assets/egusi.jpeg',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -585,6 +656,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -605,8 +677,12 @@ const dummyMeals = [
     title: 'Oha Soup',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageUrl:
-        'https://i0.wp.com/www.skabash.com/wp-content/uploads/2022/03/oha-1280x720.jpg?fit=940%2C529&ssl=1',
+    imageUrl: Image.asset(
+      'assets/oha.webp',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -616,6 +692,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -636,8 +713,14 @@ const dummyMeals = [
     title: 'Beans - Ewa Agonyi',
     affordability: Affordability.affordable,
     complexity: Complexity.challenging,
-    imageUrl:
-        'https://www.myactivekitchen.com/wp-content/uploads/2015/04/ewa-aganyin2-1024x682.jpg',
+    // imageUrl:
+    //     'https://www.myactivekitchen.com/wp-content/uploads/2015/04/ewa-aganyin2-1024x682.jpg',
+    imageUrl: Image.asset(
+      'assets/ewa.webp',
+      height: 250,
+      fit: BoxFit.cover,
+      width: double.infinity,
+    ),
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -647,6 +730,7 @@ const dummyMeals = [
       'Spices',
       'Cheese (optional)'
     ],
+    intro: 'Boiled yam is a food that majority of nigerian eat in the morning or at night',
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -662,3 +746,4 @@ const dummyMeals = [
     isLactoseFree: true,
   ),
 ];
+

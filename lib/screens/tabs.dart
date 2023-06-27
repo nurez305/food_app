@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_first_app/providers/favourite_provider.dart';
 import 'package:my_first_app/screens/categories.dart';
 import 'package:my_first_app/screens/filters.dart';
+// import 'package:my_first_app/screens/meal_detail.dart';
 import 'package:my_first_app/screens/meals.dart';
 import 'package:my_first_app/widgets/main_drawer.dart';
 import 'package:my_first_app/providers/filter_provider.dart';

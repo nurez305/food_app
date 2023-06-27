@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/model/meal.dart';
 import 'package:my_first_app/widgets/meal_item_trait.dart';
-import 'package:transparent_image/transparent_image.dart';
+// import 'package:transparent_image/transparent_image.dart';
 
 class MealItem extends StatelessWidget {
   const MealItem({super.key, required this.meal, required this.onSelectMeal});
@@ -33,16 +33,18 @@ class MealItem extends StatelessWidget {
           onSelectMeal(meal);
         },
         child: Stack(children: [
-          Hero(
-            tag: meal.id,
-            child: FadeInImage(
-              placeholder: MemoryImage(kTransparentImage),
-              image: NetworkImage(meal.imageUrl),
-              fit: BoxFit.cover,
-              height: 200,
-              width: double.infinity,
-            ),
-          ),
+          // Hero(
+          //   tag: meal.id,
+          //   child: FadeInImage(
+          //     placeholder: MemoryImage(kTransparentImage),
+          //     image: NetworkImage(meal.imageUrl),
+          //     fit: BoxFit.cover,
+          //     height: 200,
+          //     width: double.infinity,
+          //   ),
+          // ),
+
+          meal.imageUrl,
           Positioned(
             left: 0,
             right: 0,

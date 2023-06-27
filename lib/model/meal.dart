@@ -1,3 +1,5 @@
+// import 'package:flutter/material.dart';
+
 enum Complexity {
   simple,
   challenging,
@@ -16,6 +18,8 @@ class Meal {
     required this.categories,
     required this.title,
     required this.imageUrl,
+    this.ingredientImage,
+    this.intro,
     required this.ingredients,
     required this.steps,
     required this.duration,
@@ -30,7 +34,7 @@ class Meal {
   final String id;
   final List<String> categories;
   final String title;
-  final String imageUrl;
+  final dynamic imageUrl;
   final List<String> ingredients;
   final List<String> steps;
   final int duration;
@@ -40,4 +44,7 @@ class Meal {
   final bool isLactoseFree;
   final bool isVegan;
   final bool isVegetarian;
+
+  final String? ingredientImage;
+  final String? intro;
 }

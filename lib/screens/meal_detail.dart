@@ -52,14 +52,29 @@ class MealsDetailScreen extends ConsumerWidget {
             padding: const EdgeInsets.only(bottom: 100),
             child: Column(
               children: [
-                Image.network(
-                  meal.imageUrl,
-                  height: 300,
-                  fit: BoxFit.cover,
-                  width: double.infinity,
-                ),
+                meal.imageUrl,
                 const SizedBox(
                   height: 14,
+                ),
+                Text(
+                  meal.intro != null ? 'About The Food' : "",
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                SizedBox(
+                  height: meal.intro != null ? 14 : 0,
+                ),
+                Text(
+                  meal.intro != null ? meal.intro! : "",
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                ),
+                SizedBox(
+                  height: meal.intro != null ? 12 : 0,
                 ),
                 Text(
                   'Ingredient',
